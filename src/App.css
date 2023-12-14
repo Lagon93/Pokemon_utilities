@@ -1,38 +1,90 @@
-.App {
+/* src/App.css */
+body, html, #root {
+  background-color: #f4f4f4;
+  margin: 0;
+  height: 100%;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark-mode body,  .dark-mode #root  {
+  background-color: #333;
+}
+.dark-mode {
+  background-color: #333;
+}
+
+.navbar {
+  background-color: #306eff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-top: 5rem;
+  background-color: #b4b4b4;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+  color: #fff;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  background-color: #306eff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark-mode .card {
+  background-color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card img {
+  width: 4rem;
+  height: auto;
+  max-height: 4rem;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title {
+  color: #000;
+  margin-top: 5px;
+}
+
+.card-text {
+  color: #000;
+  margin-top: 5px;
+}
+
+.active {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
 }

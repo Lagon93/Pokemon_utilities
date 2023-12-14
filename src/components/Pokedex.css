@@ -1,0 +1,58 @@
+/* src/components/Pokedex.css */
+form {
+    margin-bottom: 1.25rem; /* 20px */
+  }
+  
+  input {
+    padding: 1rem; /* 10px */
+  }
+  
+  button {
+    padding: 1rem; /* 10px */
+    cursor: pointer;
+  }
+  
+  .suggestions {
+    margin-top: 1.25rem; /* 20px */
+  }
+  
+  .suggestions div {
+    cursor: pointer;
+    margin-bottom: 0.3125rem; /* 5px */
+  }
+  
+  .pokemon-details {
+    margin-top: 1.25rem; /* 20px */
+  }
+  
+  .pokemon-details h2 {
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.625rem; /* 10px */
+  }
+  
+  .pokemon-details img {
+    width: 12rem; /* Ajusta el tamaño del sprite del Pokémon según sea necesario */
+    height: auto;
+    margin-right: 1.25rem; /* 20px */
+    float: left;
+  }
+  
+  .pokemon-details strong {
+    margin-right: 0.3125rem; /* 5px */
+  }
+  
+  .pokemon-details img.types {
+    width: 5rem; /* 80px */
+    margin-right: 0.3125rem; /* 5px */
+  }
+  .pokemon-details .text-container {
+    overflow: hidden; /* Evita que el texto se extienda debajo del sprite del Pokémon */
+  }
+  
+  .pokemon-details .text-container h2 {
+    margin-top: 0; /* Elimina el margen superior del título */
+  }
+  
+  .pokemon-details .text-container div {
+    text-align: left; /* Justifica el texto a la izquierda */
+  }
